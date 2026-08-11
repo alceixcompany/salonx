@@ -25,7 +25,7 @@ const FloatingContact = () => {
         </svg>
       ),
       href: 'https://wa.me/905057595559',
-      color: 'bg-[#15110d]/92 border border-[rgba(199,155,67,0.48)] backdrop-blur-xl',
+      color: 'border border-white/35 bg-[#25D366] shadow-[0_12px_30px_rgba(37,211,102,0.32)] hover:bg-[#20bd5a]',
       angle: 220 // Sol üst (çeyrek daire)
     },
     {
@@ -36,7 +36,7 @@ const FloatingContact = () => {
         </svg>
       ),
       href: 'tel:+905057595559',
-      color: 'bg-[#15110d]/92 border border-[rgba(199,155,67,0.48)] backdrop-blur-xl',
+      color: 'border border-white/25 bg-[#171717] shadow-[0_12px_30px_rgba(0,0,0,0.28)] hover:bg-[#ed1c24]',
       angle: 260 // Sol üst (çeyrek daire)
     },
     {
@@ -47,7 +47,7 @@ const FloatingContact = () => {
         </svg>
       ),
       href: 'https://www.instagram.com/salonxlcomtr/',
-      color: 'bg-[#15110d]/92 border border-[rgba(199,155,67,0.48)] backdrop-blur-xl',
+      color: 'border border-white/35 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] shadow-[0_12px_30px_rgba(214,41,118,0.30)] hover:saturate-150',
       angle: 180 // Sol (çeyrek daire)
     }
   ];
@@ -79,11 +79,11 @@ const FloatingContact = () => {
               href={option.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${option.color} text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-500 ease-out transform absolute ${
+              className={`${option.color} absolute flex h-12 w-12 items-center justify-center rounded-full text-white transition-all duration-500 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ed1c24] focus-visible:ring-offset-2 ${
                 isOpen 
                   ? 'opacity-100 scale-100' 
                   : 'opacity-0 scale-0 pointer-events-none'
-              } hover:scale-110 hover:rotate-12`}
+              } hover:scale-110`}
               style={{
                 left: `${x + 32}px`, // 32px = ana butonun yarı genişliği
                 top: `${y + 32}px`, // 32px = ana butonun yarı yüksekliği
@@ -101,16 +101,22 @@ const FloatingContact = () => {
       {/* Main Toggle Button */}
       <button
         onClick={toggleMenu}
-        className="relative z-30 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border border-white/40 bg-[var(--lale-gold)] text-[#17120c] shadow-2xl shadow-[rgba(31,24,18,0.22)] transition-all duration-300 hover:scale-110 hover:bg-[var(--lale-gold-soft)] active:scale-95"
+        className="group relative z-30 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border border-white/35 bg-gradient-to-br from-[#ff4249] via-[#ed1c24] to-[#b90e15] text-white shadow-[0_14px_34px_rgba(237,28,36,0.38)] transition-all duration-300 hover:scale-105 hover:shadow-[0_18px_42px_rgba(237,28,36,0.50)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ed1c24] focus-visible:ring-offset-4 active:scale-95"
         title="İletişim"
+        aria-label={isOpen ? 'İletişim menüsünü kapat' : 'İletişim menüsünü aç'}
+        aria-expanded={isOpen}
         type="button"
       >
+        {!isOpen && (
+          <span className="absolute inset-[-6px] -z-10 animate-ping rounded-full border border-[#ed1c24]/35 opacity-40" />
+        )}
+        <span className="absolute inset-[3px] rounded-full border border-white/20" />
         {isOpen ? (
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="h-6 w-6 transition-transform duration-300 group-hover:rotate-90" fill="currentColor" viewBox="0 0 24 24">
             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
           </svg>
         ) : (
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="h-6 w-6 transition-transform duration-300 group-hover:-rotate-12" fill="currentColor" viewBox="0 0 24 24">
             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
           </svg>
         )}
