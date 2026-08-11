@@ -1,0 +1,105 @@
+{
+  "kategoriler": [
+    {
+      "id": "cilt-bakimi",
+      "name": "Cilt Bakımı",
+      "count": 3
+    },
+    {
+      "id": "lazer-epilasyon",
+      "name": "Lazer Epilasyon",
+      "count": 1
+    },
+    {
+      "id": "estetik-detaylar",
+      "name": "Estetik Detaylar",
+      "count": 2
+    }
+  ],
+  "haberler": [
+    {
+      "id": 1,
+      "slug": "cilt-bakiminda-dogru-rutin",
+      "title": "Cilt Bakımında Doğru Rutin: Işıltıyı Yoran Değil Destekleyen Adımlar",
+      "excerpt": "Cilt tipinize uygun profesyonel analiz, düzenli nem dengesi ve mevsime göre yenilenen bakım planı daha sakin ve canlı bir görünüm sağlar.",
+      "content": "Sağlıklı görünen cilt, çoğu zaman karmaşık rutinlerden değil, doğru sırayla uygulanan sade adımlardan güç alır. Salon XL’de ilk hedefimiz cildi dinlemek, hassasiyetleri anlamak ve bakımı buna göre şekillendirmektir.\n\nTemizleme, nemlendirme ve güneş koruması günlük rutinin temelidir. Profesyonel bakım ise bu temeli destekleyen daha derin bir dokunuş sunar.\n\nBakım sonrası süreç de uygulama kadar önemlidir. İlk gün yoğun aktif içeriklerden kaçınmak, cildi güneşten korumak ve önerilen nem desteğini sürdürmek sonucun daha dengeli ilerlemesine yardımcı olur.",
+      "image": "/content/news/skincare-routine.png",
+      "date": "1 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Cilt Bakımı",
+      "categoryId": "cilt-bakimi",
+      "readTime": "4 dk",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "slug": "hydrafacial-neden-seviliyor",
+      "title": "Hydrafacial Neden Bu Kadar Seviliyor?",
+      "excerpt": "Hydrafacial, cildi arındırırken nem desteği sağlamasıyla özellikle yoğun tempoda pratik ve etkili bakım arayanlar için öne çıkar.",
+      "content": "Hydrafacial uygulaması, cildi nazikçe arındıran ve aynı anda nem desteği sunan modern bir bakım protokolüdür. Salon XL’de uygulama öncesi cilt ihtiyacı değerlendirilir ve seans bu ihtiyaca göre kişiselleştirilir.\n\nUygulama sonrası ciltte daha temiz, ferah ve canlı bir his oluşur. Düzenli aralıklarla planlandığında mat görünümün azalmasına, nem dengesinin desteklenmesine ve bakım rutininin daha verimli ilerlemesine katkı sağlayabilir.",
+      "image": "/content/news/hydrafacial-glow.png",
+      "date": "2 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Cilt Bakımı",
+      "categoryId": "cilt-bakimi",
+      "readTime": "3 dk",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "slug": "lazer-epilasyonda-konforlu-surec",
+      "title": "Lazer Epilasyonda Konforlu Süreç İçin Bilmeniz Gerekenler",
+      "excerpt": "Lazer epilasyon sürecinde en iyi deneyim; cilt tipine uygun planlama, randevu düzeni ve işlem sonrası bakım notlarına dikkat etmekle oluşur.",
+      "content": "Lazer epilasyon, tek seanslık bir sonuçtan çok düzenli takip gerektiren planlı bir süreçtir. Salon XL’de seans aralıkları, uygulama bölgesi ve kişinin cilt-kıl yapısı dikkate alınarak belirlenir.\n\nRandevu öncesinde cildi tahriş edecek işlemlerden kaçınmak, güneş maruziyetini azaltmak ve uzmanın hazırlık önerilerine uymak konforu artırır. İşlem sonrası dönemde ise nem desteği ve güneş koruması önemlidir.",
+      "image": "/content/news/laser-room.png",
+      "date": "3 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Lazer Epilasyon",
+      "categoryId": "lazer-epilasyon",
+      "readTime": "4 dk",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "slug": "kalici-makyajda-dogal-gorunum",
+      "title": "Kalıcı Makyajda Doğal Görünüm Nasıl Yakalanır?",
+      "excerpt": "Renk seçimi, yüz oranları ve günlük kullanım alışkanlıkları kalıcı makyaj planının merkezinde olmalıdır.",
+      "content": "Kalıcı makyajda doğal görünümün anahtarı ölçüdür. Salon XL’de tasarım yapılırken yüz hatları, ten alt tonu ve kişinin günlük stil tercihleri birlikte değerlendirilir.\n\nKaş, dudak veya eyeliner uygulamalarında amaç ifadeyi sertleştirmek değil, daha bakımlı ve düzenli bir görünüm sağlamaktır. Bu nedenle ön çizim ve renk seçimi aceleye getirilmeden yapılır.",
+      "image": "/content/news/permanent-makeup.png",
+      "date": "4 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Estetik Detaylar",
+      "categoryId": "estetik-detaylar",
+      "readTime": "3 dk",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "slug": "ipek-kirpik-bakim-rehberi",
+      "title": "İpek Kirpik Sonrası Bakım: Etkiyi Uzatan Küçük Alışkanlıklar",
+      "excerpt": "İlk 24 saat su ve buhar temasına dikkat etmek, yağlı ürünlerden kaçınmak ve kirpikleri nazikçe taramak görünümü korumaya yardımcı olur.",
+      "content": "İpek kirpik uygulaması, bakışı daha açık ve düzenli göstermek için tercih edilen zarif bir işlemdir. Salon XL’de kirpik yoğunluğu ve uzunluğu kişinin göz yapısına göre belirlenir.\n\nUygulama sonrası ilk gün buhar, yoğun su teması ve yağ bazlı ürünlerden uzak durmak önemlidir. Kirpikleri çekiştirmemek ve düzenli şekilde nazikçe taramak formun daha uzun süre korunmasına yardımcı olur.",
+      "image": "/content/news/silk-lashes.png",
+      "date": "5 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Estetik Detaylar",
+      "categoryId": "estetik-detaylar",
+      "readTime": "3 dk",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "slug": "yaz-aylarinda-leke-bakimi",
+      "title": "Yaz Aylarında Leke Görünümüne Karşı Daha Bilinçli Bakım",
+      "excerpt": "Leke bakımında aceleci ve agresif uygulamalar yerine cildi koruyan, mevsime uygun ve düzenli bir plan tercih edilmelidir.",
+      "content": "Yaz döneminde leke görünümüyle çalışırken cildi korumak ilk adımdır. Güneş maruziyeti artarken güçlü uygulamaları doğru zamanlamak ve günlük korumayı aksatmamak gerekir.\n\nSalon XL’de leke bakımına yaklaşırken cildin hassasiyet seviyesi ve mevsim koşulları dikkate alınır. Amaç cildi yormadan, daha dengeli ve aydınlık bir görünümü desteklemektir.",
+      "image": "/content/news/spot-care.png",
+      "date": "6 Temmuz 2026",
+      "author": "Salon XL",
+      "category": "Cilt Bakımı",
+      "categoryId": "cilt-bakimi",
+      "readTime": "4 dk",
+      "featured": false
+    }
+  ]
+}
