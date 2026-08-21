@@ -23,7 +23,7 @@ interface AuthState {
 // Statik admin bilgileri
 const STATIC_ADMIN = {
   email: 'admin@salonxl.com.tr',
-  password: 'admin123',
+  password: 'SalonX!2026Admin',
   uid: 'static-admin-uid',
   displayName: 'Statik Admin'
 };

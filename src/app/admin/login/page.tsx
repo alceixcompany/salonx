@@ -36,7 +36,7 @@ const AdminLogin = () => {
     try {
       // First try normal login, if it fails and it's static credentials, try static login
       // Or just try both. Given the user's request, we'll try static if it matches, otherwise normal.
-      if (email === 'admin@salonxl.com.tr' && password === 'admin123') {
+      if (email === 'admin@salonxl.com.tr' && password === 'SalonX!2026Admin') {
         await dispatch(loginWithStaticAdmin({ email, password })).unwrap();
       } else {
         await dispatch(loginUser({ email, password })).unwrap();
