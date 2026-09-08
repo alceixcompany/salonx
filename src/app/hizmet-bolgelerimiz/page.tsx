@@ -120,8 +120,8 @@ const ServiceAreasPage = () => {
         eyebrow="Hizmet Alanlarımız"
         title={<>Hizmet<br />bölgelerimiz</>}
         description="İstanbul’un farklı bölgelerinde güzellik ve bakım hizmetlerimizi sizinle daha güçlü bir deneyim standardıyla buluşturuyoruz."
-        image="/salonxl/salon-interior.jpg"
-        imageAlt="Salon XL hizmet bölgeleri"
+        image="/salonxl/real/salon-exterior-wide.webp"
+        imageAlt="Salon XL Güngören dış cephe"
         align="center"
       />
 
@@ -161,7 +161,7 @@ const ServiceAreasPage = () => {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <Image
-                      src={area.imageUrl || '/content/gallery/reception-lounge.png'}
+                      src={area.imageUrl || '/salonxl/real/salon-exterior.webp'}
                       alt={area.name}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-300"

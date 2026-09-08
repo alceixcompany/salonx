@@ -7,18 +7,22 @@ import { FiArrowRight, FiInstagram } from 'react-icons/fi';
 import PageHero from '@/components/PageHero';
 
 const gallery = [
-  { src: '/salonxl/gallery-generated/salon-interior-v1.webp', title: 'Salon XL Atmosferi', category: 'Salon' },
-  { src: '/salonxl/gallery-generated/balayage-v1.webp', title: 'Karamel Balayage', category: 'Saç Tasarımı' },
-  { src: '/salonxl/gallery-generated/ombre-v1.webp', title: 'Soğuk Bej Ombre', category: 'Saç Tasarımı' },
-  { src: '/salonxl/gallery-generated/bridal-updo-v1.webp', title: 'Özel Gün Saç Tasarımı', category: 'Gelin / Nişan' },
-  { src: '/salonxl/gallery-generated/skincare-v1.webp', title: 'Profesyonel Cilt Bakımı', category: 'Güzellik' },
-  { src: '/salonxl/gallery-generated/nails-v1.webp', title: 'Kalıcı Oje & Manikür', category: 'Tırnak' },
+  { src: '/salonxl/real/salon-service-wide.webp', title: 'Salon XL’de Bir Gün', category: 'Salon' },
+  { src: '/salonxl/real/color-application.webp', title: 'Profesyonel Renk Uygulaması', category: 'Saç Tasarımı' },
+  { src: '/salonxl/real/hair-styling.webp', title: 'Saç Şekillendirme', category: 'Saç Tasarımı' },
+  { src: '/salonxl/real/hair-wash-service.webp', title: 'Saç Bakım Alanı', category: 'Saç Bakımı' },
+  { src: '/salonxl/real/client-consultation.webp', title: 'Kişiye Özel Danışmanlık', category: 'Danışmanlık' },
+  { src: '/salonxl/real/styling-stations.webp', title: 'Uygulama İstasyonları', category: 'Salon' },
+  { src: '/salonxl/real/beauty-treatment-station.webp', title: 'Güzellik Bakım Alanı', category: 'Güzellik' },
+  { src: '/salonxl/real/care-station.webp', title: 'Bakım İstasyonu', category: 'Güzellik' },
+  { src: '/salonxl/real/skincare-corridor.webp', title: 'Cilt Bakım Bölümü', category: 'Cilt Bakımı' },
+  { src: '/salonxl/real/wash-lounge.webp', title: 'Saç Yıkama ve Bakım Bölümü', category: 'Salon' },
 ] as const;
 
 export default function GalleryPage() {
   return (
     <main className="page-flow min-h-screen">
-      <PageHero eyebrow="Salon XL" title={<>Galeri</>} description="Salonumuzdan, saç tasarımlarımızdan ve profesyonel uygulamalarımızdan seçilmiş kareler." image="/salonxl/gallery-generated/salon-interior-v1.webp" imageAlt="Salon XL galeri" />
+      <PageHero eyebrow="Salon XL" title={<>Galeri</>} description="Salonumuzdan, saç tasarımlarımızdan ve profesyonel uygulamalarımızdan seçilmiş gerçek kareler." image="/salonxl/real/salon-service-wide.webp" imageAlt="Salon XL ekibi çalışma sırasında" />
       <section className="lale-light-section py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

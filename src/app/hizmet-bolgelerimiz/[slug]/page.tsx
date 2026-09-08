@@ -110,7 +110,7 @@ const ServiceAreaDetailPage = () => {
         eyebrow="Hizmet Bölgesi"
         title={<>{serviceArea.name}</>}
         description={serviceArea.description}
-        image={serviceArea.imageUrl || '/content/gallery/reception-lounge.png'}
+        image={serviceArea.imageUrl || '/salonxl/real/salon-exterior.webp'}
         imageAlt={serviceArea.name}
         align="center"
       />

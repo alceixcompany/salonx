@@ -30,9 +30,11 @@ const assets = [
   'gallery-1.jpg', 'gallery-2.jpg', 'gallery-3.jpg', 'gallery-4.jpg', 'gallery-5.jpg',
   'salon-interior.jpg', 'ombre.jpg', 'sombre.jpg', 'mikro-kaynak.jpg',
   'cilt-bakimi.jpg', 'lazer-epilasyon.jpg', 'protez-tirnak.jpg',
-  'gallery-generated/balayage-v1.webp', 'gallery-generated/ombre-v1.webp',
-  'gallery-generated/salon-interior-v1.webp', 'gallery-generated/bridal-updo-v1.webp',
-  'gallery-generated/skincare-v1.webp', 'gallery-generated/nails-v1.webp',
+  'real/salon-service-wide.webp', 'real/color-application.webp',
+  'real/hair-styling.webp', 'real/hair-wash-service.webp',
+  'real/styling-stations.webp', 'real/skincare-corridor.webp',
+  'real/client-consultation.webp', 'real/beauty-treatment-station.webp',
+  'real/care-station.webp', 'real/wash-lounge.webp',
 ];
 
 const contentTypes = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
@@ -75,12 +77,16 @@ for (const category of categories) {
 }
 
 const gallery = [
-  ['premium-salon-atmosferi', 'Salon XL Atmosferi', 'Sakin, modern ve özenli salon deneyimi.', 'salon', 'gallery-generated/salon-interior-v1.webp', ['salon xl', 'atmosfer']],
-  ['karamel-balayage', 'Karamel Balayage', 'Boyutlu renk geçişleri ve sağlıklı parlaklık.', 'sac-tasarim', 'gallery-generated/balayage-v1.webp', ['balayage', 'saç tasarımı']],
-  ['soguk-bej-ombre', 'Soğuk Bej Ombre', 'Doğal diplerden aydınlık uçlara zarif geçiş.', 'sac-tasarim', 'gallery-generated/ombre-v1.webp', ['ombre', 'renklendirme']],
-  ['ozel-gun-sac-tasarimi', 'Özel Gün Saç Tasarımı', 'Modern ve zarif topuz tasarımı.', 'sac-tasarim', 'gallery-generated/bridal-updo-v1.webp', ['gelin saçı', 'topuz']],
-  ['profesyonel-cilt-bakimi', 'Profesyonel Cilt Bakımı', 'Cildin ihtiyacına göre planlanan özenli bakım.', 'bakim', 'gallery-generated/skincare-v1.webp', ['cilt bakımı', 'güzellik']],
-  ['kalici-oje-manikur', 'Kalıcı Oje & Manikür', 'Bakımlı eller için zarif bordo manikür.', 'bakim', 'gallery-generated/nails-v1.webp', ['manikür', 'kalıcı oje']],
+  ['salon-xlde-bir-gun', 'Salon XL’de Bir Gün', 'Ekibimizin gerçek çalışma ortamından bir kare.', 'salon', 'real/salon-service-wide.webp', ['salon xl', 'atmosfer']],
+  ['profesyonel-renk-uygulamasi', 'Profesyonel Renk Uygulaması', 'Saç renklendirme sürecinden gerçek bir uygulama anı.', 'sac-tasarim', 'real/color-application.webp', ['renklendirme', 'saç tasarımı']],
+  ['sac-sekillendirme', 'Saç Şekillendirme', 'Salon XL’de saç şekillendirme uygulaması.', 'sac-tasarim', 'real/hair-styling.webp', ['saç şekillendirme', 'saç tasarımı']],
+  ['sac-bakim-alani', 'Saç Bakım Alanı', 'Saç yıkama ve bakım bölümümüzden bir kare.', 'bakim', 'real/hair-wash-service.webp', ['saç bakımı', 'salon']],
+  ['uygulama-istasyonlari', 'Uygulama İstasyonları', 'Bakım ve tasarım için hazırlanan salon istasyonlarımız.', 'salon', 'real/styling-stations.webp', ['salon', 'istasyon']],
+  ['cilt-bakim-bolumu', 'Cilt Bakım Bölümü', 'Cilt bakımı ürünleri ve uygulama alanımız.', 'bakim', 'real/skincare-corridor.webp', ['cilt bakımı', 'güzellik']],
+  ['kisiye-ozel-danismanlik', 'Kişiye Özel Danışmanlık', 'Uygulama öncesi beklentilerin değerlendirildiği danışmanlık anı.', 'sac-tasarim', 'real/client-consultation.webp', ['danışmanlık', 'saç tasarımı']],
+  ['guzellik-bakim-alani', 'Güzellik Bakım Alanı', 'Hijyenik ve düzenli güzellik bakım istasyonumuz.', 'bakim', 'real/beauty-treatment-station.webp', ['güzellik', 'bakım']],
+  ['bakim-istasyonu', 'Bakım İstasyonu', 'Profesyonel bakım uygulamaları için hazırlanan istasyon.', 'bakim', 'real/care-station.webp', ['bakım', 'istasyon']],
+  ['sac-yikama-bolumu', 'Saç Yıkama ve Bakım Bölümü', 'Saç yıkama ve bakım alanımızdan gerçek bir kare.', 'salon', 'real/wash-lounge.webp', ['saç bakımı', 'salon']],
 ];
 
 const galleryIds = new Set(gallery.map(([id]) => id));
@@ -98,7 +104,7 @@ for (const [id, title, description, categoryId, filename, tags] of gallery) {
     thumbnailUrl: urls[filename],
     tags,
     isActive: true,
-    isFeatured: id === 'karamel-balayage' || id === 'premium-salon-atmosferi',
+    isFeatured: id === 'profesyonel-renk-uygulamasi' || id === 'salon-xlde-bir-gun',
     order: gallery.findIndex((item) => item[0] === id) + 1,
     createdAt: now,
     updatedAt: now,

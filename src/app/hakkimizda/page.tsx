@@ -12,8 +12,8 @@ const AboutPage = () => {
         eyebrow="Hakkımızda"
         title={<>24 yıllık<br />deneyim</>}
         description="Salon XL, deneyimli kadrosu ve modern atmosferiyle saç tasarımı, güzellik ve bakım hizmetlerini bir araya getirir."
-        image="/salonxl/salon-interior.jpg"
-        imageAlt="Salon XL hakkında"
+        image="/salonxl/real/salon-service-wide.webp"
+        imageAlt="Salon XL ekibi ve salon atmosferi"
       />
 
       <section className="lale-dark-section py-24 sm:py-32">
@@ -63,8 +63,8 @@ const AboutPage = () => {
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-[48px] shadow-2xl">
                 <Image
-                  src="/salonxl/salon-interior.jpg"
-                  alt="Salon XL salon içi"
+                  src="/salonxl/real/wash-lounge.webp"
+                  alt="Salon XL saç yıkama ve bakım bölümü"
                   fill
                   className="object-cover"
                 />

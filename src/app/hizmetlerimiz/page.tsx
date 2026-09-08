@@ -11,8 +11,8 @@ const ServicesPage = () => {
         eyebrow="Salon XL"
         title={<>Hizmet<br />menümüz</>}
         description="Saç tasarımı, bakım, renklendirme, tırnak, cilt bakımı, epilasyon ve özel gün hizmetlerimizi keşfedin."
-        image="/salonxl/sombre.jpg"
-        imageAlt="Salon XL hizmetleri"
+        image="/salonxl/real/salon-service-wide.webp"
+        imageAlt="Salon XL ekibi saç tasarımı uygularken"
       />
 
       <section className="lale-dark-section py-20 sm:py-24">

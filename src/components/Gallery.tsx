@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 
 const images = [
-  { src: '/salonxl/gallery-generated/salon-interior-v1.webp', title: 'Salon XL Atmosferi', className: 'sm:col-span-2 sm:row-span-2' },
-  { src: '/salonxl/gallery-generated/balayage-v1.webp', title: 'Karamel Balayage', className: '' },
-  { src: '/salonxl/gallery-generated/ombre-v1.webp', title: 'Soğuk Bej Ombre', className: '' },
-  { src: '/salonxl/gallery-generated/bridal-updo-v1.webp', title: 'Özel Gün Saç Tasarımı', className: '' },
-  { src: '/salonxl/gallery-generated/skincare-v1.webp', title: 'Profesyonel Cilt Bakımı', className: '' },
+  { src: '/salonxl/real/salon-service-wide.webp', title: 'Salon XL’de Bir Gün', className: 'sm:col-span-2 sm:row-span-2' },
+  { src: '/salonxl/real/color-application.webp', title: 'Profesyonel Renk Uygulaması', className: '' },
+  { src: '/salonxl/real/hair-styling.webp', title: 'Saç Şekillendirme', className: '' },
+  { src: '/salonxl/real/hair-wash-service.webp', title: 'Saç Bakım Alanı', className: '' },
+  { src: '/salonxl/real/styling-stations.webp', title: 'Salon İstasyonlarımız', className: '' },
 ] as const;
 
 const Gallery = () => (

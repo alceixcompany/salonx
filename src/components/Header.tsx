@@ -11,6 +11,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const isAdminPage = pathname?.startsWith('/admin') || false;
+  const useDarkNavigation = isScrolled || pathname !== '/';
   const navLinks = [
     { href: '/', label: 'Ana Sayfa' },
     { href: '/hizmetlerimiz', label: 'Hizmetlerimiz' },
@@ -131,7 +132,7 @@ const Header = () => {
                   <Link
                     href={link.href}
                     className={`group relative flex h-full items-center whitespace-nowrap text-sm font-semibold transition-colors duration-300 ${
-                      isScrolled
+                      useDarkNavigation
                         ? isActive
                           ? 'text-[#171412]'
                           : 'text-[#5f5853] hover:text-[#171412]'
@@ -159,7 +160,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             className={`border p-3 transition-colors lg:hidden ${
-              isScrolled
+              useDarkNavigation
                 ? 'border-black/15 text-[#171412] hover:border-[#ed1c24] hover:text-[#ed1c24]'
                 : 'border-white/25 text-white hover:border-[#ed1c24] hover:text-[#ed1c24]'
             }`}

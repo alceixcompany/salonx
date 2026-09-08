@@ -5,11 +5,11 @@ import { FiArrowRight, FiPhone } from 'react-icons/fi';
 const Hero = () => (
   <section className="relative min-h-[790px] overflow-hidden bg-[#111] text-white sm:min-h-[850px]">
     <Image
-      src="/salonxl/hero-editorial-v1.webp"
+      src="/salonxl/real/salon-service-wide.webp"
       alt="Salon XL profesyonel saç tasarımı"
       fill
       priority
-      className="object-cover object-[62%_center] sm:object-center"
+      className="object-cover object-center"
       sizes="100vw"
     />
 

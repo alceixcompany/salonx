@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
 
 const serviceGroups = [
-  { title: 'Saç Kesimi & Tasarım', items: ['Saç Kesimi', 'Tesettür Saç Kesimi', 'Casper Saç Kesim'], image: '/salonxl/gallery-generated/balayage-v1.webp' },
-  { title: 'Saç Tasarım', items: ['Ombre', 'Sombre', 'Röfle', 'Topuz', 'Maşa', 'Balyaj', 'Mikro Kaynak'], image: '/salonxl/gallery-generated/ombre-v1.webp' },
-  { title: 'Saç Bakımı & Renk', items: ['Keratin Bakım', 'Saç Cila', 'Dip Boya', 'Komple Boya', 'Renk Değişimi'], image: '/salonxl/hero-editorial-v1.webp' },
-  { title: 'El, Ayak & Tırnak', items: ['Pedikür', 'Spa Pedikür', 'Medikal Manikür', 'Protez Tırnak', 'Jel Tırnak', 'Kalıcı Oje'], image: '/salonxl/gallery-generated/nails-v1.webp' },
-  { title: 'Cilt & Epilasyon', items: ['Cilt Bakımı', 'Leke Bakımı', 'Anti Aging', 'Lazer Epilasyon', 'Buz Lazer', 'IPL Lazer'], image: '/salonxl/gallery-generated/skincare-v1.webp' },
-  { title: 'Makyaj & Özel Gün', items: ['Gelin Makyajı', 'Gelin Başı', 'Tesettür Gelin Başı', 'Nişan Başı'], image: '/salonxl/gallery-generated/bridal-updo-v1.webp' },
+  { title: 'Saç Kesimi & Tasarım', items: ['Saç Kesimi', 'Tesettür Saç Kesimi', 'Casper Saç Kesim'], image: '/salonxl/real/hair-styling.webp' },
+  { title: 'Saç Tasarım', items: ['Ombre', 'Sombre', 'Röfle', 'Topuz', 'Maşa', 'Balyaj', 'Mikro Kaynak'], image: '/salonxl/real/color-application.webp' },
+  { title: 'Saç Bakımı & Renk', items: ['Keratin Bakım', 'Saç Cila', 'Dip Boya', 'Komple Boya', 'Renk Değişimi'], image: '/salonxl/real/hair-wash-service.webp' },
+  { title: 'El, Ayak & Tırnak', items: ['Pedikür', 'Spa Pedikür', 'Medikal Manikür', 'Protez Tırnak', 'Jel Tırnak', 'Kalıcı Oje'], image: '/salonxl/real/beauty-treatment-station.webp' },
+  { title: 'Cilt & Epilasyon', items: ['Cilt Bakımı', 'Leke Bakımı', 'Anti Aging', 'Lazer Epilasyon', 'Buz Lazer', 'IPL Lazer'], image: '/salonxl/real/skincare-corridor.webp' },
+  { title: 'Makyaj & Özel Gün', items: ['Gelin Makyajı', 'Gelin Başı', 'Tesettür Gelin Başı', 'Nişan Başı'], image: '/salonxl/real/styling-stations.webp' },
 ] as const;
 
 const Services = () => (

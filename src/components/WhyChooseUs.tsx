@@ -75,8 +75,8 @@ const WhyChooseUs = () => {
           <div className="relative">
             <div className="relative min-h-[430px] overflow-hidden rounded-lg border border-white/55 bg-white/35 shadow-[0_28px_80px_rgba(31,24,18,0.14)] sm:min-h-[560px]">
               <Image
-                src="/salonxl/salon-interior.jpg"
-                alt="Salon XL salon içi"
+                src="/salonxl/real/salon-service-floor.webp"
+                alt="Salon XL ekibi müşterilerine saç bakımı uygularken"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 52vw"

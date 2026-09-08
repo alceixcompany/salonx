@@ -28,7 +28,7 @@ const structuredData = {
   name: 'Salon XL',
   url: 'https://www.salonxl.com.tr',
   logo: 'https://www.salonxl.com.tr/salonxl/logo.png',
-  image: 'https://www.salonxl.com.tr/salonxl/salon-interior.jpg',
+  image: 'https://www.salonxl.com.tr/salonxl/real/salon-service-wide.webp',
   telephone: ['+90 505 759 55 59', '+90 212 677 67 43'],
   email: 'info@salonxl.com.tr',
   address: {

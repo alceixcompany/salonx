@@ -151,8 +151,8 @@ const HaberDetay = () => {
         eyebrow="Blog Yazısı"
         title={<>{haber?.title}</>}
         description={haber?.subtitle || 'Salon XL editöryel notları ve güzellik dünyasından güncel içerikler.'}
-        image="/salonxl/mikro-kaynak.jpg"
-        imageAlt="Salon XL haber detayı"
+        image="/salonxl/real/hair-styling.webp"
+        imageAlt="Salon XL saç şekillendirme uygulaması"
         heightClassName="min-h-[320px] py-16 sm:min-h-[380px] sm:py-20"
       />
 

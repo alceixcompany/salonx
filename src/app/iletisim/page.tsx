@@ -118,8 +118,8 @@ export default function ContactPage() {
         eyebrow="Bize Ulaşın"
         title={<>Sizi<br />bekliyoruz</>}
         description="Randevu planlamak veya hizmetlerimiz hakkında bilgi almak için bize ulaşın."
-        image="/salonxl/gallery-generated/salon-interior-v1.webp"
-        imageAlt="Salon XL iletişim"
+        image="/salonxl/real/salon-exterior-wide.webp"
+        imageAlt="Salon XL Güngören dış cephe"
         heightClassName="min-h-[380px] py-20 sm:min-h-[440px] sm:py-24"
       />
 

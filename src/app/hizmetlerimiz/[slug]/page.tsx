@@ -7,6 +7,20 @@ import { serviceGroups } from '@/lib/salonData';
 
 const servicesData = Object.fromEntries(serviceGroups.map(service => [service.slug, service]));
 
+const serviceHeroImages: Record<string, string> = {
+  'sac-kesimi': '/salonxl/real/hair-styling.webp',
+  'sac-tasarim': '/salonxl/real/color-application.webp',
+  'sac-bakimi': '/salonxl/real/hair-wash-service.webp',
+  renklendirme: '/salonxl/real/color-application.webp',
+  'el-ayak': '/salonxl/real/beauty-treatment-station.webp',
+  epilasyon: '/salonxl/real/skincare-corridor.webp',
+  agda: '/salonxl/real/beauty-treatment-station.webp',
+  tirnak: '/salonxl/real/care-station.webp',
+  makyaj: '/salonxl/real/styling-stations.webp',
+  'gelin-nisan': '/salonxl/real/client-consultation.webp',
+  'cilt-bakimi': '/salonxl/real/skincare-corridor.webp',
+};
+
 interface ServiceDetailPageProps {
   params: Promise<{
     slug: string;
@@ -27,7 +41,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
         eyebrow="Salon XL"
         title={<>{service.title}</>}
         description={service.description}
-        image="/salonxl/sombre.jpg"
+        image={serviceHeroImages[service.slug] || '/salonxl/real/salon-service-wide.webp'}
         imageAlt={`${service.title} hizmeti`}
         align="center"
         heightClassName="min-h-[420px] py-24 sm:min-h-[500px] sm:py-28"

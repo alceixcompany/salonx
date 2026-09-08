@@ -123,8 +123,8 @@ const NewsPage = () => {
         eyebrow="Güzellik Günlüğü"
         title={<>Haberler<br />& duyurular</>}
         description="Saç tasarımı, güzellik trendleri, bakım önerileri ve Salon XL’deki yenilikleri takip edin."
-        image="/salonxl/mikro-kaynak.jpg"
-        imageAlt="Salon XL haberler"
+        image="/salonxl/real/hair-styling.webp"
+        imageAlt="Salon XL saç şekillendirme uygulaması"
       />
 
       <section className="lale-dark-section py-24 sm:py-32">
