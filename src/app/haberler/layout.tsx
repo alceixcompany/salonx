@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Haberler & Blog | Salon XL',
   description: 'Saç bakımı, güzellik trendleri ve Salon XL’den güncel içerikler.',
   alternates: {
-    canonical: 'https://www.salonxl.com.tr/haberler',
+    canonical: 'https://salonxl.com.tr/haberler',
   },
   openGraph: {
     title: 'Haberler & Blog | Salon XL',
     description: 'Saç ve güzellik ipuçları ile Salon XL’den güncel içerikler.',
-    url: 'https://www.salonxl.com.tr/haberler',
+    url: 'https://salonxl.com.tr/haberler',
     type: 'website',
   },
 };
