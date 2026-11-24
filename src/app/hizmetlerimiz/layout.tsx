@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'Hizmetlerimiz | Salon XL',
   description: 'Salon XL saç kesimi, ombre, sombre, röfle, mikro kaynak, saç bakımı, cilt bakımı, epilasyon, tırnak ve özel gün hizmetlerini inceleyin.',
   alternates: {
-    canonical: 'https://www.salonxl.com.tr/hizmetlerimiz',
+    canonical: 'https://salonxl.com.tr/hizmetlerimiz',
   },
   openGraph: {
     title: 'Hizmetlerimiz | Salon XL',
     description: 'Salon XL saç tasarımı, güzellik ve kişisel bakım hizmetleri.',
-    url: 'https://www.salonxl.com.tr/hizmetlerimiz',
+    url: 'https://salonxl.com.tr/hizmetlerimiz',
     type: 'website',
   },
 };
