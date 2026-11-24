@@ -26,9 +26,9 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'HairSalon',
   name: 'Salon XL',
-  url: 'https://www.salonxl.com.tr',
-  logo: 'https://www.salonxl.com.tr/salonxl/logo.png',
-  image: 'https://www.salonxl.com.tr/salonxl/real/salon-service-wide.webp',
+  url: 'https://salonxl.com.tr',
+  logo: 'https://salonxl.com.tr/salonxl/logo.png',
+  image: 'https://salonxl.com.tr/salonxl/real/salon-service-wide.webp',
   telephone: ['+90 505 759 55 59', '+90 212 677 67 43'],
   email: 'info@salonxl.com.tr',
   address: {
@@ -44,7 +44,7 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.salonxl.com.tr"),
+  metadataBase: new URL("https://salonxl.com.tr"),
   title: "Salon XL | Güngören Bayan Kuaförü",
   description: "Salon XL Güngören'de saç kesimi, ombre, sombre, mikro kaynak, saç bakımı, cilt bakımı, lazer epilasyon, protez tırnak ve özel gün hizmetleri sunar.",
   keywords: [
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   publisher: "Salon XL",
   robots: "index, follow",
   alternates: {
-    canonical: "https://www.salonxl.com.tr"
+    canonical: "https://salonxl.com.tr"
   },
   category: "beauty",
   classification: "Business",
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "Salon XL",
-    url: "https://www.salonxl.com.tr",
+    url: "https://salonxl.com.tr",
     images: [
       {
         url: '/salonxl/logo.png',

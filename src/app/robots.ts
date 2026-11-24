@@ -8,10 +8,8 @@ export default function robots(): MetadataRoute.Robots {
       disallow: [
         '/admin/',
         '/api/',
-        '/_next/',
-        '/static/',
       ],
     },
-    sitemap: 'https://www.salonxl.com.tr/sitemap.xml',
+    sitemap: 'https://salonxl.com.tr/sitemap.xml',
   }
 }

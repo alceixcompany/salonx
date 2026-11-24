@@ -58,7 +58,7 @@ const services = serviceGroups.map(({ slug }) => ({
 }))
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.salonxl.com.tr'
+  const baseUrl = 'https://salonxl.com.tr'
   
   try {
     // Firebase'den dinamik verileri al
@@ -95,7 +95,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           .trim();
       };
       
-      const slug = data.slug || createSlug(data.title || '');
+      // Blog sayfası başlıktan üretilen slug ile açılıyor; sitemap de aynı adresi vermeli (ALCEIX)
+      const slug = createSlug(data.title || '');
       
       return {
         url: `${baseUrl}/haberler/${slug}`,
