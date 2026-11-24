@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
@@ -25,6 +26,30 @@ interface ServiceDetailPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+// SEO: her hizmet sayfasına kendi başlığı, açıklaması ve canonical adresi (önceden /hizmetlerimiz'e işaret ediyordu) (ALCEIX)
+export async function generateMetadata({ params }: ServiceDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = servicesData[slug as keyof typeof servicesData];
+  if (!service) return {};
+  const path = '/hizmetlerimiz/' + slug;
+  const title = service.title + ' Güngören | Salon XL';
+  const description = service.description + ' Salon XL, Merkez Mah. Gazi Osman Paşa Cd. No:23 Güngören.';
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: 'website',
+      title,
+      description,
+      url: 'https://salonxl.com.tr' + path,
+      siteName: 'Salon XL',
+      locale: 'tr_TR',
+      images: [{ url: serviceHeroImages[slug] || '/salonxl/real/salon-service-wide.webp' }],
+    },
+  };
 }
 
 export default async function ServiceDetailPage({ params }: ServiceDetailPageProps) {
