@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: 'İletişim & Randevu | Salon XL',
   description: 'Salon XL Güngören adres, telefon ve konum bilgileri. Randevunuzu hemen planlayın.',
   alternates: {
-    canonical: 'https://www.salonxl.com.tr/iletisim',
+    canonical: 'https://salonxl.com.tr/iletisim',
   },
   openGraph: {
     title: 'İletişim & Randevu | Salon XL',
     description: 'Salon XL ile iletişime geçin veya randevunuzu planlayın.',
-    url: 'https://www.salonxl.com.tr/iletisim',
+    url: 'https://salonxl.com.tr/iletisim',
     type: 'website',
   },
 };
